@@ -8,9 +8,14 @@ public class Main {
      * zip(myArray1, myArray2) → {1,3,5,7,9,2,4,6,8,10,12,14,16}
      */
     public static int[] combine(int[] array1, int[] array2) {
-
-        return null;
-
+        int[] bA = new int[array1.length + array2.length];
+        for (int i = 0; i < array1.length; i++) {
+            bA[i] = array1[i];
+        }
+        for (int i = 0; i < array2.length; i++) {
+            bA[i + array1.length] = array2[i];
+        }
+        return bA;
     }
 
     /**
@@ -20,7 +25,7 @@ public class Main {
      * int[] myArray2 = {2,4,6,8,10};
      * zip(myArray1, myArray2) → {1,2,3,4,5,6,7,8,9,10}
      */
-    public static int[] zip(int[] array1, int[] array2) {
+   public static int[] zip(int[] array1, int[] array2) {
 
         return null;
 
